@@ -1020,6 +1020,7 @@ message PoolingParameter {
     DEF_ALL3 = 6;
     DEF_ALL4 = 7;
     LOWRES = 8;
+    HEBBIAN = 9;
   }
   optional PoolMethod pool = 1 [default = MAX]; // The pooling method
   // Pad, kernel size, and stride are all given as a single value for equal
