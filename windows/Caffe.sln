@@ -39,9 +39,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "extract_features", "extract
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_all", "test_all\test_all.vcxproj", "{00BBA8C0-707D-42A7-82FF-D5211185ED7F}"
-	ProjectSection(ProjectDependencies) = postProject
-		{CE6BBC46-9EFC-4029-9065-85A023866AFB} = {CE6BBC46-9EFC-4029-9065-85A023866AFB}
-	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pycaffe", "pycaffe\pycaffe.vcxproj", "{38B6CE09-4B1A-4E72-A547-8A3299D8DA60}"
 	ProjectSection(ProjectDependencies) = postProject

@@ -224,4 +224,7 @@
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\..\src\caffe\test\test_im2col_kernel.cu" />
+  </ItemGroup>
 </Project>

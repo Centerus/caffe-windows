@@ -18,15 +18,15 @@ TEST_F(PlatformTest, TestInitialization) {
   printf("Major revision number:         %d\n",  CAFFE_TEST_CUDA_PROP.major);
   printf("Minor revision number:         %d\n",  CAFFE_TEST_CUDA_PROP.minor);
   printf("Name:                          %s\n",  CAFFE_TEST_CUDA_PROP.name);
-  printf("Total global memory:           %lu\n",
+  printf("Total global memory:           %zu\n",
          CAFFE_TEST_CUDA_PROP.totalGlobalMem);
-  printf("Total shared memory per block: %lu\n",
+  printf("Total shared memory per block: %zu\n",
          CAFFE_TEST_CUDA_PROP.sharedMemPerBlock);
   printf("Total registers per block:     %d\n",
          CAFFE_TEST_CUDA_PROP.regsPerBlock);
   printf("Warp size:                     %d\n",
          CAFFE_TEST_CUDA_PROP.warpSize);
-  printf("Maximum memory pitch:          %lu\n",
+  printf("Maximum memory pitch:          %zu\n",
          CAFFE_TEST_CUDA_PROP.memPitch);
   printf("Maximum threads per block:     %d\n",
          CAFFE_TEST_CUDA_PROP.maxThreadsPerBlock);
@@ -37,9 +37,9 @@ TEST_F(PlatformTest, TestInitialization) {
     printf("Maximum dimension %d of grid:   %d\n", i,
            CAFFE_TEST_CUDA_PROP.maxGridSize[i]);
   printf("Clock rate:                    %d\n", CAFFE_TEST_CUDA_PROP.clockRate);
-  printf("Total constant memory:         %lu\n",
+  printf("Total constant memory:         %zu\n",
          CAFFE_TEST_CUDA_PROP.totalConstMem);
-  printf("Texture alignment:             %lu\n",
+  printf("Texture alignment:             %zu\n",
          CAFFE_TEST_CUDA_PROP.textureAlignment);
   printf("Concurrent copy and execution: %s\n",
          (CAFFE_TEST_CUDA_PROP.deviceOverlap ? "Yes" : "No"));
